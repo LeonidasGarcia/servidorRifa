@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.json()); // To parse JSON bodies
+app.use(express.json());
 app.use('/api', usuarioRoutes);
 
 app.get('/', (req, res) => {
